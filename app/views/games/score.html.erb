@@ -1,0 +1,13 @@
+<h1>Results</h1>
+<h2>Ready to see your score ? 🤗😰</h2>
+
+<% if @grid == true %>
+<% return "Sorry but #{@results} can't be build out of #{@letters} 🧐" %>
+<% elsif @english_word %>
+<% return "Sorry but #{@results} doesn't seem to be an english word 😕" %>
+<% else %>
+<% return "Congrats !!! 👏🏼 #{@results} is a valid english word !" %>
+<% end %>
+
+
+
